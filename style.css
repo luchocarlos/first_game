@@ -1,0 +1,11 @@
+.wrap{
+    display:flex;
+    flex-wrap: wrap;
+    height:300px;
+    width: 400px;
+}
+
+img{
+    padding: 0.5em;
+}
+
