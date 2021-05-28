@@ -78,10 +78,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if(optionOneId == optionTwoId){
             cards[optionOneId].setAttribute('src', 'images/back.png')
             cards[optionTwoId].setAttribute('src', 'images/back.png')
-            alert('You have clicked the same image!')
+            let same = ('You have clicked the same image!')
+            document.getElementById('mesage').innerHTML = same;
 
         }else if (cardsChosen[0]===cardsChosen[1]){
-            alert('You Found a match!')
+            let match = ('You Found a match!')
+            document.getElementById('mesage').innerHTML = match;
             cards[optionOneId].setAttribute('src', 'images/white.png')
             cards[optionTwoId].setAttribute('src', 'images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
@@ -91,7 +93,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }else {
             cards[optionOneId].setAttribute('src', 'images/back.png')
             cards[optionTwoId].setAttribute('src', 'images/back.png')
-            alert('Sorry, try again')
+            let sorry =('Sorry, try again')
+            document.getElementById('mesage').innerHTML = sorry;
         }
 
         cardsChosen = []
